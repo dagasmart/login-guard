@@ -1,2 +1,23 @@
-# login-guard
-增加登录尝试次数限制，防止暴力破解
+## BizAdmin 登录保护
+
+## 效果
+
+增加登录尝试次数限制，防止暴力破解。
+
+## 安装
+
+#### zip 下载地址
+
+[https://gitee.com/dagasmart/login-guard/repository/archive/master.zip](https://gitee.com/slowlyo/owl-login-guard/repository/archive/master.zip)
+
+#### composer
+
+```bash
+composer require dagasmart/login-guard
+```
+
+## 使用说明
+
+1. 安装扩展
+2. 在扩展管理中启用扩展
+3. 在扩展配置中设置登录尝试次数和锁定时间

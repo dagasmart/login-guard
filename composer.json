@@ -1,0 +1,35 @@
+{
+    "name": "dagasmart/login-guard",
+    "alias": "登录保护",
+    "description": "BizAdmin扩展: 增加登录保护功能",
+    "type": "library",
+    "keywords": [
+        "owl-admin",
+        "extension"
+    ],
+    "homepage": "https://gitee.com/dagasmart/login-guard",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dagasmart",
+            "email": "dagasmart@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "dagasmart/bizadmin": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DagaSmart\\LoginGuard\\": "src/"
+        }
+    },
+    "extra": {
+        "bizadmin": "DagaSmart\\LoginGuard\\LoginGuardServiceProvider",
+        "laravel": {
+            "providers": [
+                "DagaSmart\\LoginGuard\\LoginGuardServiceProvider"
+            ]
+        }
+    }
+}
