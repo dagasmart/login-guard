@@ -4,7 +4,7 @@
     "description": "BizAdmin扩展: 增加登录保护功能",
     "type": "library",
     "keywords": [
-        "owl-admin",
+        "bizadmin",
         "extension"
     ],
     "homepage": "https://gitee.com/dagasmart/login-guard",
