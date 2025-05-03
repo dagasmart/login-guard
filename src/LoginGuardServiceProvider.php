@@ -16,7 +16,7 @@ class LoginGuardServiceProvider extends ServiceProvider
     public function settingForm()
     {
         return $this->baseSettingForm()->data([
-            'extension'     => $this->getName(),
+            'extension'     => $this->getCode(),
             'max_try_count' => 10,
             'lock_time'     => 5,
         ])->body([
