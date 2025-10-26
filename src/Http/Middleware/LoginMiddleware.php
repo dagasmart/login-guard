@@ -35,9 +35,11 @@ class LoginMiddleware
         }
 
         $response = $next($request);
-
         if ($request->is(config('admin.route.prefix') . '/login') && $request->has(['username', 'password'])) {
-            if ($response instanceof \Illuminate\Http\JsonResponse && $response->getData()->msg == __('admin.login_failed')) {
+            if ($response instanceof \Illuminate\Http\JsonResponse &&
+                $response->getData() &&
+                $response->getData()->message &&
+                $response->getData()->message == __('admin.login_failed')) {
                 $this->record($request->input('username'), $response->getData()->status == 0);
             }
         }
