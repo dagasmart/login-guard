@@ -8,8 +8,7 @@
 
 #### zip 下载地址
 
-[https://gitee.com/dagasmart/login-guard/repository/archive/master.zip](https://gitee.com/dagasmart/login-guard/repository/archive/master.zip)
-
+[https://gitee.com/dagasmart/login-guard/repository/archive/master.zip]
 #### composer
 
 ```bash
